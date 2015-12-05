@@ -7,8 +7,15 @@
 //
 
 #import "ViewController.h"
+#import "DatasourceHandler.h"
+#import "MyCell.h"
+#import "MyCell+ConfigureForMyObj.h"
+#import "MyObj.h"
 
-@interface ViewController ()
+static NSString *const MyCellIdentifier = @"MyCell" ;
+
+@interface ViewController () <UITableViewDelegate>
+@property (nonatomic,strong) DatasourceHandler *tableHander ;
 
 @end
 
@@ -16,7 +23,45 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    [self setupTableView] ;
+}
+
+- (void)setupTableView
+{
+    TableViewCellConfigureBlock configureCell = ^(MyCell *cell, MyObj *myobj) {
+        [cell configureForMyObj:myobj];
+    };
+    
+    NSMutableArray *list = [[NSMutableArray alloc] init] ;
+    for (int i = 0; i < 10; i++)
+    {
+        MyObj *obj = [[MyObj alloc] init] ;
+        obj.name = [NSString stringWithFormat:@"hehe%d",i] ;
+        obj.creationDate = [NSDate date] ;
+        [list addObject:obj] ;
+    }
+    
+    self.tableHander = [[DatasourceHandler alloc] initWithItems:list
+                                                 cellIdentifier:MyCellIdentifier
+                                             configureCellBlock:configureCell] ;
+    
+    self.table.dataSource = self.tableHander;
+    self.table.delegate = self ;
+    [self.table registerNib:[MyCell nibWithIdentifier:MyCellIdentifier]
+     forCellReuseIdentifier:MyCellIdentifier];
+    
+}
+
+#pragma mark - UITableViewDelegate
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 72.0 ;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"click") ;
 }
 
 - (void)didReceiveMemoryWarning {
