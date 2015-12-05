@@ -10,9 +10,16 @@
 
 @implementation MyCell
 
-+ (UINib *)nibWithIdentifier:(NSString *)identifier
+- (void)configureForCustomObj:(id)obj ;
 {
-    return [UINib nibWithNibName:identifier bundle:nil];
+    MyObj *myObj = (MyObj *)obj ;
+    self.lbTitle.text = myObj.name ;
+    self.lbDate.text = [NSString stringWithFormat:@"%@", myObj.creationDate] ;
+}
+
++ (CGFloat)getCellHeightWithCustomObj:(id)obj
+{
+    return 72.0f ;
 }
 
 - (void)awakeFromNib {

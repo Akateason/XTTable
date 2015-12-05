@@ -7,61 +7,68 @@
 //
 
 #import "ViewController.h"
-#import "DatasourceHandler.h"
+#import "XTTableDataDelegate.h"
 #import "MyCell.h"
-#import "MyCell+ConfigureForMyObj.h"
 #import "MyObj.h"
 
 static NSString *const MyCellIdentifier = @"MyCell" ;
 
-@interface ViewController () <UITableViewDelegate>
-@property (nonatomic,strong) DatasourceHandler *tableHander ;
+@interface ViewController ()
+@property (nonatomic,strong) NSMutableArray *list ;
+@property (nonatomic,strong) XTTableDataDelegate *tableHander ;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (NSMutableArray *)list
+{
+    if (!_list) {
+        _list = [NSMutableArray array] ;
+        
+        for (int i = 0; i < 10; i++)
+        {
+            MyObj *obj = [[MyObj alloc] init] ;
+            obj.name = [NSString stringWithFormat:@"hehe%d",i] ;
+            obj.creationDate = [NSDate date] ;
+            [_list addObject:obj] ;
+        }
+    }
+    
+    return _list ;
+}
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad] ;
+    
     [self setupTableView] ;
 }
 
 - (void)setupTableView
 {
     TableViewCellConfigureBlock configureCell = ^(MyCell *cell, MyObj *myobj) {
-        [cell configureForMyObj:myobj];
-    };
+        [cell configureForCustomObj:myobj] ;
+    } ;
     
-    NSMutableArray *list = [[NSMutableArray alloc] init] ;
-    for (int i = 0; i < 10; i++)
-    {
-        MyObj *obj = [[MyObj alloc] init] ;
-        obj.name = [NSString stringWithFormat:@"hehe%d",i] ;
-        obj.creationDate = [NSDate date] ;
-        [list addObject:obj] ;
-    }
+    CellHeightBlock heightBlock = ^CGFloat(NSIndexPath *indexPath, id item) {
+        return [MyCell getCellHeightWithCustomObj:item] ;
+    } ;
     
-    self.tableHander = [[DatasourceHandler alloc] initWithItems:list
-                                                 cellIdentifier:MyCellIdentifier
-                                             configureCellBlock:configureCell] ;
+    DidSelectCellBlock selectedBlock = ^(NSIndexPath *indexPath, id item) {
+        NSLog(@"click row : %@",@(indexPath.row)) ;
+    } ;
     
-    self.table.dataSource = self.tableHander;
-    self.table.delegate = self ;
+    self.tableHander = [[XTTableDataDelegate alloc] initWithItems:self.list
+                                                   cellIdentifier:MyCellIdentifier
+                                               configureCellBlock:configureCell
+                                                  cellHeightBlock:heightBlock
+                                                   didSelectBlock:selectedBlock] ;
+
+    [self.tableHander handleTableViewDatasourceAndDelegate:self.table] ;
+    
     [self.table registerNib:[MyCell nibWithIdentifier:MyCellIdentifier]
-     forCellReuseIdentifier:MyCellIdentifier];
-    
-}
-
-#pragma mark - UITableViewDelegate
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 72.0 ;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSLog(@"click") ;
+     forCellReuseIdentifier:MyCellIdentifier] ;
 }
 
 - (void)didReceiveMemoryWarning {

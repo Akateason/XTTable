@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyObj.h"
+#import "XTRootCustomCell.h"
 
 
-@interface MyCell : UITableViewCell
-
-+ (UINib *)nibWithIdentifier:(NSString *)identifier ;
+@interface MyCell : XTRootCustomCell
 
 @property (weak, nonatomic) IBOutlet UILabel *lbTitle;
 @property (weak, nonatomic) IBOutlet UILabel *lbDate;

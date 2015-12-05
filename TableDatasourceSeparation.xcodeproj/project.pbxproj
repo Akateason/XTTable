@@ -15,11 +15,11 @@
 		D7E8FD151C12961C005E908F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E8FD131C12961C005E908F /* LaunchScreen.storyboard */; };
 		D7E8FD201C12961C005E908F /* TableDatasourceSeparationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD1F1C12961C005E908F /* TableDatasourceSeparationTests.m */; };
 		D7E8FD2B1C12961C005E908F /* TableDatasourceSeparationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD2A1C12961C005E908F /* TableDatasourceSeparationUITests.m */; };
-		D7E8FD3A1C129660005E908F /* DatasourceHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD391C129660005E908F /* DatasourceHandler.m */; };
 		D7E8FD421C12966A005E908F /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD3C1C129669005E908F /* MyCell.m */; };
 		D7E8FD431C12966A005E908F /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7E8FD3D1C129669005E908F /* MyCell.xib */; };
-		D7E8FD441C12966A005E908F /* MyCell+ConfigureForMyObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD3F1C129669005E908F /* MyCell+ConfigureForMyObj.m */; };
 		D7E8FD451C12966A005E908F /* MyObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD411C12966A005E908F /* MyObj.m */; };
+		D7E8FD4C1C12A5F8005E908F /* XTTableDataDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD4B1C12A5F8005E908F /* XTTableDataDelegate.m */; };
+		D7E8FD4F1C12C0D7005E908F /* XTRootCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD4E1C12C0D7005E908F /* XTRootCustomCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,15 +56,15 @@
 		D7E8FD261C12961C005E908F /* TableDatasourceSeparationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableDatasourceSeparationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E8FD2A1C12961C005E908F /* TableDatasourceSeparationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableDatasourceSeparationUITests.m; sourceTree = "<group>"; };
 		D7E8FD2C1C12961C005E908F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7E8FD381C129660005E908F /* DatasourceHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatasourceHandler.h; sourceTree = "<group>"; };
-		D7E8FD391C129660005E908F /* DatasourceHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatasourceHandler.m; sourceTree = "<group>"; };
 		D7E8FD3B1C129669005E908F /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
 		D7E8FD3C1C129669005E908F /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
 		D7E8FD3D1C129669005E908F /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
-		D7E8FD3E1C129669005E908F /* MyCell+ConfigureForMyObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyCell+ConfigureForMyObj.h"; sourceTree = "<group>"; };
-		D7E8FD3F1C129669005E908F /* MyCell+ConfigureForMyObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MyCell+ConfigureForMyObj.m"; sourceTree = "<group>"; };
 		D7E8FD401C129669005E908F /* MyObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyObj.h; sourceTree = "<group>"; };
 		D7E8FD411C12966A005E908F /* MyObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyObj.m; sourceTree = "<group>"; };
+		D7E8FD4A1C12A5F8005E908F /* XTTableDataDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTTableDataDelegate.h; sourceTree = "<group>"; };
+		D7E8FD4B1C12A5F8005E908F /* XTTableDataDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTTableDataDelegate.m; sourceTree = "<group>"; };
+		D7E8FD4D1C12C0D7005E908F /* XTRootCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTRootCustomCell.h; sourceTree = "<group>"; };
+		D7E8FD4E1C12C0D7005E908F /* XTRootCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTRootCustomCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,15 +119,8 @@
 				D7E8FD091C12961C005E908F /* AppDelegate.m */,
 				D7E8FD0B1C12961C005E908F /* ViewController.h */,
 				D7E8FD0C1C12961C005E908F /* ViewController.m */,
-				D7E8FD3B1C129669005E908F /* MyCell.h */,
-				D7E8FD3C1C129669005E908F /* MyCell.m */,
-				D7E8FD3D1C129669005E908F /* MyCell.xib */,
-				D7E8FD3E1C129669005E908F /* MyCell+ConfigureForMyObj.h */,
-				D7E8FD3F1C129669005E908F /* MyCell+ConfigureForMyObj.m */,
-				D7E8FD401C129669005E908F /* MyObj.h */,
-				D7E8FD411C12966A005E908F /* MyObj.m */,
-				D7E8FD381C129660005E908F /* DatasourceHandler.h */,
-				D7E8FD391C129660005E908F /* DatasourceHandler.m */,
+				D7E8FD501C12C6F2005E908F /* XTTableDataSourceSeperation */,
+				D7E8FD491C129FAB005E908F /* MyCell */,
 				D7E8FD0E1C12961C005E908F /* Main.storyboard */,
 				D7E8FD111C12961C005E908F /* Assets.xcassets */,
 				D7E8FD131C12961C005E908F /* LaunchScreen.storyboard */,
@@ -161,6 +154,29 @@
 				D7E8FD2C1C12961C005E908F /* Info.plist */,
 			);
 			path = TableDatasourceSeparationUITests;
+			sourceTree = "<group>";
+		};
+		D7E8FD491C129FAB005E908F /* MyCell */ = {
+			isa = PBXGroup;
+			children = (
+				D7E8FD3B1C129669005E908F /* MyCell.h */,
+				D7E8FD3C1C129669005E908F /* MyCell.m */,
+				D7E8FD3D1C129669005E908F /* MyCell.xib */,
+				D7E8FD401C129669005E908F /* MyObj.h */,
+				D7E8FD411C12966A005E908F /* MyObj.m */,
+			);
+			name = MyCell;
+			sourceTree = "<group>";
+		};
+		D7E8FD501C12C6F2005E908F /* XTTableDataSourceSeperation */ = {
+			isa = PBXGroup;
+			children = (
+				D7E8FD4A1C12A5F8005E908F /* XTTableDataDelegate.h */,
+				D7E8FD4B1C12A5F8005E908F /* XTTableDataDelegate.m */,
+				D7E8FD4D1C12C0D7005E908F /* XTRootCustomCell.h */,
+				D7E8FD4E1C12C0D7005E908F /* XTRootCustomCell.m */,
+			);
+			name = XTTableDataSourceSeperation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,13 +310,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7E8FD441C12966A005E908F /* MyCell+ConfigureForMyObj.m in Sources */,
+				D7E8FD4F1C12C0D7005E908F /* XTRootCustomCell.m in Sources */,
 				D7E8FD0D1C12961C005E908F /* ViewController.m in Sources */,
 				D7E8FD451C12966A005E908F /* MyObj.m in Sources */,
 				D7E8FD0A1C12961C005E908F /* AppDelegate.m in Sources */,
+				D7E8FD4C1C12A5F8005E908F /* XTTableDataDelegate.m in Sources */,
 				D7E8FD071C12961C005E908F /* main.m in Sources */,
 				D7E8FD421C12966A005E908F /* MyCell.m in Sources */,
-				D7E8FD3A1C129660005E908F /* DatasourceHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +542,7 @@
 				D7E8FD311C12961C005E908F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7E8FD321C12961C005E908F /* Build configuration list for PBXNativeTarget "TableDatasourceSeparationTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +551,7 @@
 				D7E8FD341C12961C005E908F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7E8FD351C12961C005E908F /* Build configuration list for PBXNativeTarget "TableDatasourceSeparationUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +560,7 @@
 				D7E8FD371C12961C005E908F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
