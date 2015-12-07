@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+@class XTRootCustomCell ;
 
-typedef void (^TableViewCellConfigureBlock)(id cell, id item) ;
+typedef void    (^TableViewCellConfigureBlock)(NSIndexPath *indexPath, id item, XTRootCustomCell *cell) ;
 typedef CGFloat (^CellHeightBlock)(NSIndexPath *indexPath, id item) ;
-typedef void (^DidSelectCellBlock)(NSIndexPath *indexPath, id item);
+typedef void    (^DidSelectCellBlock)(NSIndexPath *indexPath, id item) ;
 
 @interface XTTableDataDelegate : NSObject <UITableViewDelegate,UITableViewDataSource>
 
@@ -21,8 +22,8 @@ typedef void (^DidSelectCellBlock)(NSIndexPath *indexPath, id item);
     cellHeightBlock:(CellHeightBlock)aHeightBlock
      didSelectBlock:(DidSelectCellBlock)didselectBlock ;
 
-- (id)itemAtIndexPath:(NSIndexPath *)indexPath ;
-
 - (void)handleTableViewDatasourceAndDelegate:(UITableView *)table ;
+
+- (id)itemAtIndexPath:(NSIndexPath *)indexPath ;
 
 @end

@@ -18,8 +18,8 @@
 		D7E8FD421C12966A005E908F /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD3C1C129669005E908F /* MyCell.m */; };
 		D7E8FD431C12966A005E908F /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7E8FD3D1C129669005E908F /* MyCell.xib */; };
 		D7E8FD451C12966A005E908F /* MyObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD411C12966A005E908F /* MyObj.m */; };
-		D7E8FD4C1C12A5F8005E908F /* XTTableDataDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD4B1C12A5F8005E908F /* XTTableDataDelegate.m */; };
-		D7E8FD4F1C12C0D7005E908F /* XTRootCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD4E1C12C0D7005E908F /* XTRootCustomCell.m */; };
+		D7E8FD551C152DA6005E908F /* XTRootCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD521C152DA6005E908F /* XTRootCustomCell.m */; };
+		D7E8FD561C152DA6005E908F /* XTTableDataDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD541C152DA6005E908F /* XTTableDataDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,10 +61,10 @@
 		D7E8FD3D1C129669005E908F /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
 		D7E8FD401C129669005E908F /* MyObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyObj.h; sourceTree = "<group>"; };
 		D7E8FD411C12966A005E908F /* MyObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyObj.m; sourceTree = "<group>"; };
-		D7E8FD4A1C12A5F8005E908F /* XTTableDataDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTTableDataDelegate.h; sourceTree = "<group>"; };
-		D7E8FD4B1C12A5F8005E908F /* XTTableDataDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTTableDataDelegate.m; sourceTree = "<group>"; };
-		D7E8FD4D1C12C0D7005E908F /* XTRootCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTRootCustomCell.h; sourceTree = "<group>"; };
-		D7E8FD4E1C12C0D7005E908F /* XTRootCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTRootCustomCell.m; sourceTree = "<group>"; };
+		D7E8FD511C152DA6005E908F /* XTRootCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XTRootCustomCell.h; path = XTTableDataDelegate/XTRootCustomCell.h; sourceTree = "<group>"; };
+		D7E8FD521C152DA6005E908F /* XTRootCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XTRootCustomCell.m; path = XTTableDataDelegate/XTRootCustomCell.m; sourceTree = "<group>"; };
+		D7E8FD531C152DA6005E908F /* XTTableDataDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XTTableDataDelegate.h; path = XTTableDataDelegate/XTTableDataDelegate.h; sourceTree = "<group>"; };
+		D7E8FD541C152DA6005E908F /* XTTableDataDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XTTableDataDelegate.m; path = XTTableDataDelegate/XTTableDataDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,10 +171,10 @@
 		D7E8FD501C12C6F2005E908F /* XTTableDataSourceSeperation */ = {
 			isa = PBXGroup;
 			children = (
-				D7E8FD4A1C12A5F8005E908F /* XTTableDataDelegate.h */,
-				D7E8FD4B1C12A5F8005E908F /* XTTableDataDelegate.m */,
-				D7E8FD4D1C12C0D7005E908F /* XTRootCustomCell.h */,
-				D7E8FD4E1C12C0D7005E908F /* XTRootCustomCell.m */,
+				D7E8FD511C152DA6005E908F /* XTRootCustomCell.h */,
+				D7E8FD521C152DA6005E908F /* XTRootCustomCell.m */,
+				D7E8FD531C152DA6005E908F /* XTTableDataDelegate.h */,
+				D7E8FD541C152DA6005E908F /* XTTableDataDelegate.m */,
 			);
 			name = XTTableDataSourceSeperation;
 			sourceTree = "<group>";
@@ -310,11 +310,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7E8FD4F1C12C0D7005E908F /* XTRootCustomCell.m in Sources */,
+				D7E8FD551C152DA6005E908F /* XTRootCustomCell.m in Sources */,
 				D7E8FD0D1C12961C005E908F /* ViewController.m in Sources */,
 				D7E8FD451C12966A005E908F /* MyObj.m in Sources */,
+				D7E8FD561C152DA6005E908F /* XTTableDataDelegate.m in Sources */,
 				D7E8FD0A1C12961C005E908F /* AppDelegate.m in Sources */,
-				D7E8FD4C1C12A5F8005E908F /* XTTableDataDelegate.m in Sources */,
 				D7E8FD071C12961C005E908F /* main.m in Sources */,
 				D7E8FD421C12966A005E908F /* MyCell.m in Sources */,
 			);

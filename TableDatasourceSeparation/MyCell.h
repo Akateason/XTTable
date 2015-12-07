@@ -14,6 +14,6 @@
 @interface MyCell : XTRootCustomCell
 
 @property (weak, nonatomic) IBOutlet UILabel *lbTitle;
-@property (weak, nonatomic) IBOutlet UILabel *lbDate;
+@property (weak, nonatomic) IBOutlet UILabel *lbHeight;
 
 @end

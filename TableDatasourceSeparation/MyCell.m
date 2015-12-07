@@ -10,16 +10,21 @@
 
 @implementation MyCell
 
-- (void)configureForCustomObj:(id)obj ;
+- (void)configure:(UITableViewCell *)cell
+        customObj:(id)obj
+        indexPath:(NSIndexPath *)indexPath
 {
     MyObj *myObj = (MyObj *)obj ;
-    self.lbTitle.text = myObj.name ;
-    self.lbDate.text = [NSString stringWithFormat:@"%@", myObj.creationDate] ;
+    MyCell *mycell = (MyCell *)cell ;
+    mycell.lbTitle.text = myObj.name ;
+    mycell.lbHeight.text = [NSString stringWithFormat:@"my Height is : %@", @(myObj.height)] ;
+    cell.backgroundColor = indexPath.row % 2 ? [UIColor greenColor] : [UIColor brownColor] ;
 }
 
 + (CGFloat)getCellHeightWithCustomObj:(id)obj
+                            indexPath:(NSIndexPath *)indexPath
 {
-    return 72.0f ;
+    return ((MyObj *)obj).height ;
 }
 
 - (void)awakeFromNib {

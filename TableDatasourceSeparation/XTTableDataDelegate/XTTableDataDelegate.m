@@ -7,6 +7,7 @@
 //
 
 #import "XTTableDataDelegate.h"
+#import "XTRootCustomCell.h"
 
 @interface XTTableDataDelegate ()
 @property (nonatomic, strong) NSArray *items ;
@@ -56,10 +57,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentifier
-                                                            forIndexPath:indexPath] ;
     id item = [self itemAtIndexPath:indexPath] ;
-    self.configureCellBlock(cell, item) ;
+    XTRootCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentifier] ;
+    if (!cell) {
+        [XTRootCustomCell registerTable:tableView nibIdentifier:self.cellIdentifier] ;
+        cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentifier];
+    }
+    self.configureCellBlock(indexPath,item,cell) ;
     return cell ;
 }
 

@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface MyObj : NSObject
 
-@property (nonatomic, copy) NSString* name;
-@property (nonatomic, strong) NSDate* creationDate;
+@property (nonatomic, copy)     NSString *name ;
+@property (nonatomic)           CGFloat  height ;
 
 @end

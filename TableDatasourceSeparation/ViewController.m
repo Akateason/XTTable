@@ -11,7 +11,7 @@
 #import "MyCell.h"
 #import "MyObj.h"
 
-static NSString *const MyCellIdentifier = @"MyCell" ;
+static NSString *const MyCellIdentifier = @"MyCell" ; // `cellIdentifier` AND `NibName` HAS TO BE SAME !
 
 @interface ViewController ()
 @property (nonatomic,strong) NSMutableArray *list ;
@@ -29,8 +29,8 @@ static NSString *const MyCellIdentifier = @"MyCell" ;
         for (int i = 0; i < 10; i++)
         {
             MyObj *obj = [[MyObj alloc] init] ;
-            obj.name = [NSString stringWithFormat:@"hehe%d",i] ;
-            obj.creationDate = [NSDate date] ;
+            obj.name = [NSString stringWithFormat:@"my name is : %d",i] ;
+            obj.height = 50 + i * 5 ;
             [_list addObject:obj] ;
         }
     }
@@ -47,12 +47,14 @@ static NSString *const MyCellIdentifier = @"MyCell" ;
 
 - (void)setupTableView
 {
-    TableViewCellConfigureBlock configureCell = ^(MyCell *cell, MyObj *myobj) {
-        [cell configureForCustomObj:myobj] ;
+    self.table.separatorStyle = 0 ;
+
+    TableViewCellConfigureBlock configureCell = ^(NSIndexPath *indexPath, MyObj *obj, XTRootCustomCell *cell) {
+        [cell configure:cell customObj:obj indexPath:indexPath] ;
     } ;
     
     CellHeightBlock heightBlock = ^CGFloat(NSIndexPath *indexPath, id item) {
-        return [MyCell getCellHeightWithCustomObj:item] ;
+        return [MyCell getCellHeightWithCustomObj:item indexPath:indexPath] ;
     } ;
     
     DidSelectCellBlock selectedBlock = ^(NSIndexPath *indexPath, id item) {
@@ -64,11 +66,8 @@ static NSString *const MyCellIdentifier = @"MyCell" ;
                                                configureCellBlock:configureCell
                                                   cellHeightBlock:heightBlock
                                                    didSelectBlock:selectedBlock] ;
-
-    [self.tableHander handleTableViewDatasourceAndDelegate:self.table] ;
     
-    [self.table registerNib:[MyCell nibWithIdentifier:MyCellIdentifier]
-     forCellReuseIdentifier:MyCellIdentifier] ;
+    [self.tableHander handleTableViewDatasourceAndDelegate:self.table] ;
 }
 
 - (void)didReceiveMemoryWarning {
