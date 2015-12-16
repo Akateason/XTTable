@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "MyObj.h"
-//#import "XTRootCustomCell.h"
-
 
 @interface MyCell : UITableViewCell
 

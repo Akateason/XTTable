@@ -48,7 +48,7 @@ static NSString *const MyCellIdentifier = @"MyCell" ; // `cellIdentifier` AND `N
 
 - (void)setupTableView
 {
-    self.table.separatorStyle = 0 ;
+    self.table.separatorStyle = UITableViewCellSeparatorStyleNone ;
 
     TableViewCellConfigureBlock configureCell = ^(NSIndexPath *indexPath, MyObj *obj, UITableViewCell *cell) {
         [cell configure:cell customObj:obj indexPath:indexPath] ;
