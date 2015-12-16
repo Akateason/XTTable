@@ -1,14 +1,14 @@
 //
-//  XTRootCustomCell.h
+//  UITableViewCell+Extension.h
 //  TableDatasourceSeparation
 //
-//  Created by TuTu on 15/12/5.
+//  Created by TuTu on 15/12/16.
 //  Copyright © 2015年 teason. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface XTRootCustomCell : UITableViewCell
+@interface UITableViewCell (Extension)
 
 + (void)registerTable:(UITableView *)table
         nibIdentifier:(NSString *)identifier ;

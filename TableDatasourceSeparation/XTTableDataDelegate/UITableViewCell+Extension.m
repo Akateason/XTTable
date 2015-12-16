@@ -1,20 +1,14 @@
 //
-//  XTRootCustomCell.m
+//  UITableViewCell+Extension.m
 //  TableDatasourceSeparation
 //
-//  Created by TuTu on 15/12/5.
+//  Created by TuTu on 15/12/16.
 //  Copyright © 2015年 teason. All rights reserved.
 //
 
-#import "XTRootCustomCell.h"
+#import "UITableViewCell+Extension.h"
 
-@implementation XTRootCustomCell
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-    
-    // Configure the view for the selected state
-}
+@implementation UITableViewCell (Extension)
 
 #pragma mark --
 + (UINib *)nibWithIdentifier:(NSString *)identifier
@@ -48,7 +42,5 @@
     }
     return 44.0f ; // default cell height
 }
-#pragma mark --
-
 
 @end

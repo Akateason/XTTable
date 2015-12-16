@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D75CC3431C21162100E590E6 /* UITableViewCell+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D75CC3421C21162100E590E6 /* UITableViewCell+Extension.m */; };
 		D7E8FD071C12961C005E908F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD061C12961C005E908F /* main.m */; };
 		D7E8FD0A1C12961C005E908F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD091C12961C005E908F /* AppDelegate.m */; };
 		D7E8FD0D1C12961C005E908F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD0C1C12961C005E908F /* ViewController.m */; };
@@ -18,7 +19,6 @@
 		D7E8FD421C12966A005E908F /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD3C1C129669005E908F /* MyCell.m */; };
 		D7E8FD431C12966A005E908F /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7E8FD3D1C129669005E908F /* MyCell.xib */; };
 		D7E8FD451C12966A005E908F /* MyObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD411C12966A005E908F /* MyObj.m */; };
-		D7E8FD551C152DA6005E908F /* XTRootCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD521C152DA6005E908F /* XTRootCustomCell.m */; };
 		D7E8FD561C152DA6005E908F /* XTTableDataDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD541C152DA6005E908F /* XTTableDataDelegate.m */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D75CC3411C21162100E590E6 /* UITableViewCell+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+Extension.h"; path = "XTTableDataDelegate/UITableViewCell+Extension.h"; sourceTree = "<group>"; };
+		D75CC3421C21162100E590E6 /* UITableViewCell+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+Extension.m"; path = "XTTableDataDelegate/UITableViewCell+Extension.m"; sourceTree = "<group>"; };
 		D7E8FD021C12961C005E908F /* TableDatasourceSeparation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableDatasourceSeparation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E8FD061C12961C005E908F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D7E8FD081C12961C005E908F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,8 +63,6 @@
 		D7E8FD3D1C129669005E908F /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
 		D7E8FD401C129669005E908F /* MyObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyObj.h; sourceTree = "<group>"; };
 		D7E8FD411C12966A005E908F /* MyObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyObj.m; sourceTree = "<group>"; };
-		D7E8FD511C152DA6005E908F /* XTRootCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XTRootCustomCell.h; path = XTTableDataDelegate/XTRootCustomCell.h; sourceTree = "<group>"; };
-		D7E8FD521C152DA6005E908F /* XTRootCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XTRootCustomCell.m; path = XTTableDataDelegate/XTRootCustomCell.m; sourceTree = "<group>"; };
 		D7E8FD531C152DA6005E908F /* XTTableDataDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XTTableDataDelegate.h; path = XTTableDataDelegate/XTTableDataDelegate.h; sourceTree = "<group>"; };
 		D7E8FD541C152DA6005E908F /* XTTableDataDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XTTableDataDelegate.m; path = XTTableDataDelegate/XTTableDataDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -171,10 +171,10 @@
 		D7E8FD501C12C6F2005E908F /* XTTableDataSourceSeperation */ = {
 			isa = PBXGroup;
 			children = (
-				D7E8FD511C152DA6005E908F /* XTRootCustomCell.h */,
-				D7E8FD521C152DA6005E908F /* XTRootCustomCell.m */,
 				D7E8FD531C152DA6005E908F /* XTTableDataDelegate.h */,
 				D7E8FD541C152DA6005E908F /* XTTableDataDelegate.m */,
+				D75CC3411C21162100E590E6 /* UITableViewCell+Extension.h */,
+				D75CC3421C21162100E590E6 /* UITableViewCell+Extension.m */,
 			);
 			name = XTTableDataSourceSeperation;
 			sourceTree = "<group>";
@@ -310,13 +310,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7E8FD551C152DA6005E908F /* XTRootCustomCell.m in Sources */,
 				D7E8FD0D1C12961C005E908F /* ViewController.m in Sources */,
 				D7E8FD451C12966A005E908F /* MyObj.m in Sources */,
 				D7E8FD561C152DA6005E908F /* XTTableDataDelegate.m in Sources */,
 				D7E8FD0A1C12961C005E908F /* AppDelegate.m in Sources */,
 				D7E8FD071C12961C005E908F /* main.m in Sources */,
 				D7E8FD421C12966A005E908F /* MyCell.m in Sources */,
+				D75CC3431C21162100E590E6 /* UITableViewCell+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

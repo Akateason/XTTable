@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "MyObj.h"
-#import "XTRootCustomCell.h"
+//#import "XTRootCustomCell.h"
 
 
-@interface MyCell : XTRootCustomCell
+@interface MyCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *lbTitle;
 @property (weak, nonatomic) IBOutlet UILabel *lbHeight;

@@ -10,6 +10,7 @@
 #import "XTTableDataDelegate.h"
 #import "MyCell.h"
 #import "MyObj.h"
+#import "UITableViewCell+Extension.h"
 
 static NSString *const MyCellIdentifier = @"MyCell" ; // `cellIdentifier` AND `NibName` HAS TO BE SAME !
 
@@ -49,7 +50,7 @@ static NSString *const MyCellIdentifier = @"MyCell" ; // `cellIdentifier` AND `N
 {
     self.table.separatorStyle = 0 ;
 
-    TableViewCellConfigureBlock configureCell = ^(NSIndexPath *indexPath, MyObj *obj, XTRootCustomCell *cell) {
+    TableViewCellConfigureBlock configureCell = ^(NSIndexPath *indexPath, MyObj *obj, UITableViewCell *cell) {
         [cell configure:cell customObj:obj indexPath:indexPath] ;
     } ;
     
