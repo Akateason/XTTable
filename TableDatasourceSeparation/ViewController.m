@@ -16,7 +16,7 @@ static NSString *const MyCellIdentifier = @"MyCell" ; // `cellIdentifier` AND `N
 
 @interface ViewController ()
 @property (nonatomic,strong) NSMutableArray *list ;
-@property (nonatomic,strong) XTTableDataDelegate *tableHander ;
+@property (nonatomic,strong) XTTableDataDelegate *tableHandler ;
 
 @end
 
@@ -62,13 +62,13 @@ static NSString *const MyCellIdentifier = @"MyCell" ; // `cellIdentifier` AND `N
         NSLog(@"click row : %@",@(indexPath.row)) ;
     } ;
     
-    self.tableHander = [[XTTableDataDelegate alloc] initWithItems:self.list
+    self.tableHandler = [[XTTableDataDelegate alloc] initWithItems:self.list
                                                    cellIdentifier:MyCellIdentifier
                                                configureCellBlock:configureCell
                                                   cellHeightBlock:heightBlock
                                                    didSelectBlock:selectedBlock] ;
     
-    [self.tableHander handleTableViewDatasourceAndDelegate:self.table] ;
+    [self.tableHandler handleTableViewDatasourceAndDelegate:self.table] ;
 }
 
 - (void)didReceiveMemoryWarning {
