@@ -13,14 +13,16 @@
 #pragma mark --
 + (UINib *)nibWithIdentifier:(NSString *)identifier
 {
-    return [UINib nibWithNibName:identifier bundle:nil];
+    return [UINib nibWithNibName:identifier
+                          bundle:nil] ;
 }
 
 #pragma mark - Public
 + (void)registerTable:(UITableView *)table
         nibIdentifier:(NSString *)identifier
 {
-    [table registerNib:[self nibWithIdentifier:identifier] forCellReuseIdentifier:identifier] ;
+    [table registerNib:[self nibWithIdentifier:identifier]
+forCellReuseIdentifier:identifier] ;
 }
 
 #pragma mark --

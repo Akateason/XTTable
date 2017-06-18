@@ -16,7 +16,7 @@ static NSString *const MyCellIdentifier = @"MyCell" ; // `cellIdentifier` AND `N
 
 @interface ViewController ()
 @property (nonatomic,strong) NSMutableArray *list ;
-@property (nonatomic,strong) XTTableDataDelegate *tableHander ;
+@property (nonatomic,strong) XTTableDataDelegate *tableHandler ;
 
 @end
 
@@ -24,9 +24,9 @@ static NSString *const MyCellIdentifier = @"MyCell" ; // `cellIdentifier` AND `N
 
 - (NSMutableArray *)list
 {
-    if (!_list) {
-        _list = [NSMutableArray array] ;
-        
+    if (!_list)
+    {
+        _list = [@[] mutableCopy] ;
         for (int i = 0; i < 10; i++)
         {
             MyObj *obj = [[MyObj alloc] init] ;
@@ -35,7 +35,6 @@ static NSString *const MyCellIdentifier = @"MyCell" ; // `cellIdentifier` AND `N
             [_list addObject:obj] ;
         }
     }
-    
     return _list ;
 }
 
@@ -51,24 +50,27 @@ static NSString *const MyCellIdentifier = @"MyCell" ; // `cellIdentifier` AND `N
     self.table.separatorStyle = UITableViewCellSeparatorStyleNone ;
 
     TableViewCellConfigureBlock configureCell = ^(NSIndexPath *indexPath, MyObj *obj, UITableViewCell *cell) {
-        [cell configure:cell customObj:obj indexPath:indexPath] ;
+        [cell configure:cell
+              customObj:obj
+              indexPath:indexPath] ;
     } ;
     
     CellHeightBlock heightBlock = ^CGFloat(NSIndexPath *indexPath, id item) {
-        return [MyCell getCellHeightWithCustomObj:item indexPath:indexPath] ;
+        return [MyCell getCellHeightWithCustomObj:item
+                                        indexPath:indexPath] ;
     } ;
     
     DidSelectCellBlock selectedBlock = ^(NSIndexPath *indexPath, id item) {
         NSLog(@"click row : %@",@(indexPath.row)) ;
     } ;
     
-    self.tableHander = [[XTTableDataDelegate alloc] initWithItems:self.list
+    self.tableHandler = [[XTTableDataDelegate alloc] initWithItems:self.list
                                                    cellIdentifier:MyCellIdentifier
                                                configureCellBlock:configureCell
                                                   cellHeightBlock:heightBlock
                                                    didSelectBlock:selectedBlock] ;
     
-    [self.tableHander handleTableViewDatasourceAndDelegate:self.table] ;
+    [self.tableHandler handleTableViewDatasourceAndDelegate:self.table] ;
 }
 
 - (void)didReceiveMemoryWarning {
