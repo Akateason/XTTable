@@ -38,8 +38,7 @@ static NSString *const MyCellIdentifier = @"MyCell" ; // `cellIdentifier` AND `N
     return _list ;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad] ;
     
     [self setupTableView] ;
