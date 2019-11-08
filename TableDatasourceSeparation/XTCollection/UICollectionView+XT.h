@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+
 @interface UICollectionView (XT)
 
 // refresh delegate
@@ -40,7 +41,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) XTRefreshType xt_refreshType;
 
 // setup XT
-- (void)xt_setup ;
+- (void)xt_setup;
 
 /**
  PULL DOWN HEADER

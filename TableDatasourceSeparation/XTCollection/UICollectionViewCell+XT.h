@@ -49,4 +49,3 @@
 + (CGSize)xt_cellSizeForModel:(id)model;
 
 @end
-

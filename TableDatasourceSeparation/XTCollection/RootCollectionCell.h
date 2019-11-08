@@ -11,9 +11,10 @@
 
 __attribute__((deprecated("Class RootCollectionCell is deprecated , use UICollectionViewCell+XT instead!!!")))
 
+
 @interface RootCollectionCell : UICollectionViewCell
 
-@property (strong, nonatomic) NSIndexPath *indexPath;
+                                @property(strong, nonatomic) NSIndexPath *indexPath;
 @property (strong, nonatomic, readonly) id model;
 
 #pragma mark -

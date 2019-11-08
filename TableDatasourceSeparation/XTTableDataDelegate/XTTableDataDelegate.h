@@ -12,20 +12,21 @@
 __attribute__((deprecated("Class XTTableDataDelegate is deprecated , use XTTable instead!!!")))
 
 
-typedef void    (^TableViewCellConfigureBlock)(NSIndexPath *indexPath, id item, UITableViewCell *cell) ;
-typedef CGFloat (^CellHeightBlock)(NSIndexPath *indexPath, id item) ;
-typedef void    (^DidSelectCellBlock)(NSIndexPath *indexPath, id item) ;
+typedef void (^TableViewCellConfigureBlock)(NSIndexPath *indexPath, id item, UITableViewCell *cell);
+typedef CGFloat (^CellHeightBlock)(NSIndexPath *indexPath, id item);
+typedef void (^DidSelectCellBlock)(NSIndexPath *indexPath, id item);
 
-@interface XTTableDataDelegate : NSObject <UITableViewDelegate,UITableViewDataSource>
+
+@interface XTTableDataDelegate : NSObject <UITableViewDelegate, UITableViewDataSource>
 
 - (id)initWithItems:(NSArray *)anItems
      cellIdentifier:(NSString *)aCellIdentifier
  configureCellBlock:(TableViewCellConfigureBlock)aConfigureCellBlock
     cellHeightBlock:(CellHeightBlock)aHeightBlock
-     didSelectBlock:(DidSelectCellBlock)didselectBlock ;
+     didSelectBlock:(DidSelectCellBlock)didselectBlock;
 
-- (void)handleTableViewDatasourceAndDelegate:(UITableView *)table ;
+- (void)handleTableViewDatasourceAndDelegate:(UITableView *)table;
 
-- (id)itemAtIndexPath:(NSIndexPath *)indexPath ;
+- (id)itemAtIndexPath:(NSIndexPath *)indexPath;
 
 @end

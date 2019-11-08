@@ -8,23 +8,22 @@
 
 #import "MyCell.h"
 
+
 @implementation MyCell
 
 - (void)configure:(UITableViewCell *)cell
         customObj:(id)obj
-        indexPath:(NSIndexPath *)indexPath
-{
-    MyObj *myObj = (MyObj *)obj ;
-    MyCell *mycell = (MyCell *)cell ;
-    mycell.lbTitle.text = myObj.name ;
-    mycell.lbHeight.text = [NSString stringWithFormat:@"my Height is : %@", @(myObj.height)] ;
-    cell.backgroundColor = indexPath.row % 2 ? [UIColor greenColor] : [UIColor brownColor] ;
+        indexPath:(NSIndexPath *)indexPath {
+    MyObj *myObj         = (MyObj *)obj;
+    MyCell *mycell       = (MyCell *)cell;
+    mycell.lbTitle.text  = myObj.name;
+    mycell.lbHeight.text = [NSString stringWithFormat:@"my Height is : %@", @(myObj.height)];
+    cell.backgroundColor = indexPath.row % 2 ? [UIColor greenColor] : [UIColor brownColor];
 }
 
 + (CGFloat)getCellHeightWithCustomObj:(id)obj
-                            indexPath:(NSIndexPath *)indexPath
-{
-    return ((MyObj *)obj).height ;
+                            indexPath:(NSIndexPath *)indexPath {
+    return ((MyObj *)obj).height;
 }
 
 - (void)awakeFromNib {

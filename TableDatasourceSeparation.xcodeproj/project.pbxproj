@@ -19,6 +19,8 @@
 		8FB4ABF723755CB3002D5FB4 /* UICollectionViewCell+XT.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4ABEE23755CB3002D5FB4 /* UICollectionViewCell+XT.m */; };
 		8FB4ABF823755CB3002D5FB4 /* RootCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4ABF223755CB3002D5FB4 /* RootCollectionCell.m */; };
 		8FB4ABF923755CB3002D5FB4 /* RootCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4ABF323755CB3002D5FB4 /* RootCollectionView.m */; };
+		8FC3ACEB2375647B00C6D953 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8FC3ACEA2375647B00C6D953 /* README.md */; };
+		8FC3ACED2375648100C6D953 /* XTTable.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 8FC3ACEC2375648100C6D953 /* XTTable.podspec */; };
 		A2DBCA967629FBE3C45EAF9E /* Pods_TableDatasourceSeparation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B992F04C86FDF8484374B96E /* Pods_TableDatasourceSeparation.framework */; };
 		D75CC3431C21162100E590E6 /* UITableViewCell+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D75CC3421C21162100E590E6 /* UITableViewCell+Extension.m */; };
 		D7E8FD071C12961C005E908F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD061C12961C005E908F /* main.m */; };
@@ -77,11 +79,15 @@
 		8FB4ABF223755CB3002D5FB4 /* RootCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootCollectionCell.m; sourceTree = "<group>"; };
 		8FB4ABF323755CB3002D5FB4 /* RootCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootCollectionView.m; sourceTree = "<group>"; };
 		8FB4ABF423755CB3002D5FB4 /* UICollectionViewCell+XT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+XT.h"; sourceTree = "<group>"; };
+		8FC3ACE82375614200C6D953 /* XTTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTTable.h; sourceTree = "<group>"; };
+		8FC3ACE92375615000C6D953 /* XTCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTCollection.h; sourceTree = "<group>"; };
+		8FC3ACEA2375647B00C6D953 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		8FC3ACEC2375648100C6D953 /* XTTable.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = XTTable.podspec; sourceTree = SOURCE_ROOT; };
 		A8544D5A895C56E6BF307162 /* Pods-TableDatasourceSeparation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableDatasourceSeparation.debug.xcconfig"; path = "Target Support Files/Pods-TableDatasourceSeparation/Pods-TableDatasourceSeparation.debug.xcconfig"; sourceTree = "<group>"; };
 		B992F04C86FDF8484374B96E /* Pods_TableDatasourceSeparation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableDatasourceSeparation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D75CC3411C21162100E590E6 /* UITableViewCell+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+Extension.h"; path = "XTTableDataDelegate/UITableViewCell+Extension.h"; sourceTree = "<group>"; };
 		D75CC3421C21162100E590E6 /* UITableViewCell+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+Extension.m"; path = "XTTableDataDelegate/UITableViewCell+Extension.m"; sourceTree = "<group>"; };
-		D7E8FD021C12961C005E908F /* TableDatasourceSeparation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableDatasourceSeparation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E8FD021C12961C005E908F /* XTTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XTTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E8FD061C12961C005E908F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D7E8FD081C12961C005E908F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D7E8FD091C12961C005E908F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -144,6 +150,7 @@
 		8FB4ABD023755863002D5FB4 /* XTTable */ = {
 			isa = PBXGroup;
 			children = (
+				8FC3ACE82375614200C6D953 /* XTTable.h */,
 				8FB4ABD123755863002D5FB4 /* UITableView+XTReloader.h */,
 				8FB4ABDC23755863002D5FB4 /* UITableView+XTReloader.m */,
 				8FB4ABE023755863002D5FB4 /* UITableView+XTPlaceHolder.h */,
@@ -165,6 +172,7 @@
 		8FB4ABEA23755CB3002D5FB4 /* XTCollection */ = {
 			isa = PBXGroup;
 			children = (
+				8FC3ACE92375615000C6D953 /* XTCollection.h */,
 				8FB4ABF123755CB3002D5FB4 /* UICollectionView+XT.h */,
 				8FB4ABEC23755CB3002D5FB4 /* UICollectionView+XT.m */,
 				8FB4ABF023755CB3002D5FB4 /* UICollectionView+XTPlaceHolder.h */,
@@ -203,7 +211,7 @@
 		D7E8FD031C12961C005E908F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D7E8FD021C12961C005E908F /* TableDatasourceSeparation.app */,
+				D7E8FD021C12961C005E908F /* XTTable.app */,
 				D7E8FD1B1C12961C005E908F /* TableDatasourceSeparationTests.xctest */,
 				D7E8FD261C12961C005E908F /* TableDatasourceSeparationUITests.xctest */,
 			);
@@ -213,6 +221,8 @@
 		D7E8FD041C12961C005E908F /* TableDatasourceSeparation */ = {
 			isa = PBXGroup;
 			children = (
+				8FC3ACEC2375648100C6D953 /* XTTable.podspec */,
+				8FC3ACEA2375647B00C6D953 /* README.md */,
 				D7E8FD081C12961C005E908F /* AppDelegate.h */,
 				D7E8FD091C12961C005E908F /* AppDelegate.m */,
 				D7E8FD0B1C12961C005E908F /* ViewController.h */,
@@ -298,7 +308,7 @@
 			);
 			name = TableDatasourceSeparation;
 			productName = TableDatasourceSeparation;
-			productReference = D7E8FD021C12961C005E908F /* TableDatasourceSeparation.app */;
+			productReference = D7E8FD021C12961C005E908F /* XTTable.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D7E8FD1A1C12961C005E908F /* TableDatasourceSeparationTests */ = {
@@ -388,6 +398,8 @@
 			files = (
 				D7E8FD151C12961C005E908F /* LaunchScreen.storyboard in Resources */,
 				D7E8FD431C12966A005E908F /* MyCell.xib in Resources */,
+				8FC3ACEB2375647B00C6D953 /* README.md in Resources */,
+				8FC3ACED2375648100C6D953 /* XTTable.podspec in Resources */,
 				D7E8FD121C12961C005E908F /* Assets.xcassets in Resources */,
 				D7E8FD101C12961C005E908F /* Main.storyboard in Resources */,
 			);
@@ -641,7 +653,7 @@
 				INFOPLIST_FILE = TableDatasourceSeparation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.teason.TableDatasourceSeparation;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = XTTable;
 			};
 			name = Debug;
 		};
@@ -654,7 +666,7 @@
 				INFOPLIST_FILE = TableDatasourceSeparation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.teason.TableDatasourceSeparation;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = XTTable;
 			};
 			name = Release;
 		};

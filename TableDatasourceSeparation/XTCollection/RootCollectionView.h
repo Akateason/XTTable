@@ -13,17 +13,16 @@
 
 __attribute__((deprecated("Class RootCollectionView is deprecated , use UICollectionView+XT instead!!!")))
 
-@protocol RootCollectionViewDelegate <NSObject>
-@required
-- (void)collectionView:(RootCollectionView *)collection loadNew:(void (^)(void))endRefresh;
+    @protocol RootCollectionViewDelegate<NSObject> @required -
+    (void)collectionView : (RootCollectionView *)collection loadNew : (void (^)(void))endRefresh;
 @optional
 - (void)collectionView:(RootCollectionView *)collection loadMore:(void (^)(void))endRefresh;
 @end
 
 
-@interface RootCollectionView : UICollectionView
-// refresh delegate
-@property (nonatomic, weak) id<RootCollectionViewDelegate> xt_Delegate;
+    @interface RootCollectionView : UICollectionView
+                                    // refresh delegate
+                                    @property(nonatomic, weak) id<RootCollectionViewDelegate> xt_Delegate;
 /**
  REFRESH STYLE:
  DEFAULT IS `NO`  -> ONLY GIF IMAGES , SHOW WORDS WHEN IT BECOMES `YES`

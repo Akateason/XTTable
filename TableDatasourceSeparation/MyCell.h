@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MyObj.h"
 
+
 @interface MyCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *lbTitle;

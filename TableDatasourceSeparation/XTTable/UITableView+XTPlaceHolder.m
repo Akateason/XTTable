@@ -13,15 +13,15 @@
 @implementation UITableView (XTPlaceHolder)
 
 void swizzMethod(SEL oriSel, SEL newSel) {
-    
-    Class class = [UITableView class];
+    Class class      = [UITableView class];
     Method oriMethod = class_getInstanceMethod(class, oriSel);
     Method newMethod = class_getInstanceMethod(class, newSel);
-    
+
     BOOL success = class_addMethod(class, oriSel, method_getImplementation(newMethod), method_getTypeEncoding(newMethod));
     if (success) {
         class_replaceMethod(class, newSel, method_getImplementation(oriMethod), method_getTypeEncoding(oriMethod));
-    } else {
+    }
+    else {
         method_exchangeImplementations(oriMethod, newMethod);
     }
 }
@@ -36,7 +36,7 @@ void swizzMethod(SEL oriSel, SEL newSel) {
         @selector(deleteRowsAtIndexPaths:withRowAnimation:),
         @selector(reloadRowsAtIndexPaths:withRowAnimation:),
     };
-    
+
     for (NSUInteger index = 0; index < sizeof(selectors) / sizeof(SEL); ++index) {
         SEL originalSelector = selectors[index];
         SEL swizzledSelector = NSSelectorFromString([@"xt_" stringByAppendingString:NSStringFromSelector(originalSelector)]);
@@ -82,16 +82,18 @@ void swizzMethod(SEL oriSel, SEL newSel) {
 - (void)showPlaceholderNotice {
     if (self.showNoDataNotice) {
         NSInteger sectionCount = self.numberOfSections;
-        NSInteger rowCount = 0;
+        NSInteger rowCount     = 0;
         for (int i = 0; i < sectionCount; i++) {
             rowCount += [self.dataSource tableView:self numberOfRowsInSection:i];
         }
         if (rowCount == 0) {
             if (self.customNoDataView) {
                 self.backgroundView = [self customNoDataView];
-            } else
+            }
+            else
                 self.backgroundView = [[UIView alloc] init];
-        } else {
+        }
+        else {
             self.backgroundView = [[UIView alloc] init];
         }
     }
@@ -116,9 +118,9 @@ void swizzMethod(SEL oriSel, SEL newSel) {
 }
 
 - (void)setCustomNoDataView:(UIView *)customNoDataView {
-    self.showNoDataNotice = YES;
+    self.showNoDataNotice       = YES;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(placeholderTap:)];
-    [customNoDataView addGestureRecognizer:tap] ;
+    [customNoDataView addGestureRecognizer:tap];
     objc_setAssociatedObject(self, @selector(customNoDataView), customNoDataView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
@@ -127,7 +129,7 @@ void swizzMethod(SEL oriSel, SEL newSel) {
 }
 
 - (void)placeholderTap:(id)gesture {
-    if (self.defaultNoDataViewDidClickBlock) self.defaultNoDataViewDidClickBlock(self.customNoDataView) ;
+    if (self.defaultNoDataViewDidClickBlock) self.defaultNoDataViewDidClickBlock(self.customNoDataView);
 }
 
 @end

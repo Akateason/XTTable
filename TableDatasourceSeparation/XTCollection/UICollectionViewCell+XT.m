@@ -10,9 +10,11 @@
 #import <objc/runtime.h>
 #import "FastCodeHeader.h"
 
+
 @interface UICollectionViewCell ()
 @property (strong, nonatomic, readwrite) id xt_model;
 @end
+
 
 @implementation UICollectionViewCell (XT)
 

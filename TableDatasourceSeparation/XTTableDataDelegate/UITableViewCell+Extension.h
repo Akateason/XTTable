@@ -11,16 +11,16 @@
 __attribute__((deprecated("Class UITableViewCell is deprecated , use XTTable instead!!!")))
 
 
-@interface UITableViewCell (Extension)
+    @interface UITableViewCell(Extension)
 
-+ (void)registerTable:(UITableView *)table
-        nibIdentifier:(NSString *)identifier ;
+    + (void)registerTable : (UITableView *)table
+                            nibIdentifier : (NSString *)identifier;
 
 - (void)configure:(UITableViewCell *)cell
         customObj:(id)obj
-        indexPath:(NSIndexPath *)indexPath ;
+        indexPath:(NSIndexPath *)indexPath;
 
 + (CGFloat)getCellHeightWithCustomObj:(id)obj
-                            indexPath:(NSIndexPath *)indexPath ;
+                            indexPath:(NSIndexPath *)indexPath;
 
 @end

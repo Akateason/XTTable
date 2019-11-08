@@ -9,9 +9,10 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+
 @interface MyObj : NSObject
 
-@property (nonatomic, copy)     NSString *name ;
-@property (nonatomic)           CGFloat  height ;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic) CGFloat height;
 
 @end
