@@ -13,7 +13,7 @@
 
 
 
-@interface ViewController ()
+@interface ViewController () <UITableViewXTReloaderDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, copy) NSMutableArray *list;
 
 
@@ -38,11 +38,37 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-//    [self.table ]
-    [self.table xt_]
-    
+
+    [MyCell xt_registerNibFromTable:self.table] ;
+    [self.table xt_setup] ;
     
 }
+
+
+#pragma mark--
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.list.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    MyCell *cell = [MyCell xt_fetchFromTable] ;
+    return cell;
+}
+
+#pragma mark--
+#pragma mark - UITableViewDelegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return [MyCell xt_cellHeight] ;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
+
 
 
 @end

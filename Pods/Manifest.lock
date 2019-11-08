@@ -10,7 +10,7 @@ PODS:
   - UIFontWDCustomLoader (0.1.0)
   - "UITableView+FDTemplateLayoutCell (1.6)"
   - Valet (2.4.2)
-  - XTBase (1.2.1):
+  - XTBase (1.2.2):
     - Masonry
     - MJRefresh
     - ReactiveObjC
@@ -52,7 +52,7 @@ SPEC CHECKSUMS:
   UIFontWDCustomLoader: 233f0f83e543b8f24a6299d7fc773be9d704fe22
   "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
   Valet: 14463ef24fab8fd5809044ecedb61484b799fdd6
-  XTBase: 1de6177b8e73e87bb8480591d6313c536712789a
+  XTBase: 0789ccadf33d685bc1bd37871fedc0fc715d027f
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
 PODFILE CHECKSUM: 540977914ef4425084bd42ab8a40c1603da5550e
