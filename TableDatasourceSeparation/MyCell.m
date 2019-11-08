@@ -7,33 +7,23 @@
 //
 
 #import "MyCell.h"
+#import "XTTable.h"
 
 
 @implementation MyCell
 
-- (void)configure:(UITableViewCell *)cell
-        customObj:(id)obj
-        indexPath:(NSIndexPath *)indexPath {
-    MyObj *myObj         = (MyObj *)obj;
-    MyCell *mycell       = (MyCell *)cell;
-    mycell.lbTitle.text  = myObj.name;
-    mycell.lbHeight.text = [NSString stringWithFormat:@"my Height is : %@", @(myObj.height)];
-    cell.backgroundColor = indexPath.row % 2 ? [UIColor greenColor] : [UIColor brownColor];
+- (void)xt_configure:(id)model indexPath:(NSIndexPath *)indexPath {
+    [super xt_configure:model indexPath:indexPath] ;
+    
+    MyObj *myObj         = (MyObj *)model;
+    _lbTitle.text  = myObj.name;
+    _lbHeight.text = [NSString stringWithFormat:@"my Height is : %@", @(myObj.height)];
+    self.backgroundColor = indexPath.row % 2 ? [UIColor greenColor] : [UIColor brownColor];
 }
 
-+ (CGFloat)getCellHeightWithCustomObj:(id)obj
-                            indexPath:(NSIndexPath *)indexPath {
-    return ((MyObj *)obj).height;
++ (CGFloat)xt_cellHeightForModel:(id)model {
+    return ((MyObj *)model).height;
 }
 
-- (void)awakeFromNib {
-    // Initialization code
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
 
 @end

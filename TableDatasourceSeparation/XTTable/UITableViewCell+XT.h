@@ -37,8 +37,8 @@
  @param indexPath       indexPath for Cell
  *
  * USAGE
- *    - (void)configure:(id)model {
- *          [super configure: model] ;
+ *    - (void)configure:(id)model indexPath:(NSIndexPath *)indexPath {
+ *          [super configure: model indexPath:indexPath] ;
  *
  *          // do configuration ...
  *    }

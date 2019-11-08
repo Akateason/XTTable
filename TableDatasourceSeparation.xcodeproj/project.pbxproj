@@ -82,7 +82,7 @@
 		8FC3ACE82375614200C6D953 /* XTTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTTable.h; sourceTree = "<group>"; };
 		8FC3ACE92375615000C6D953 /* XTCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTCollection.h; sourceTree = "<group>"; };
 		8FC3ACEA2375647B00C6D953 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
-		8FC3ACEC2375648100C6D953 /* XTTable.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = XTTable.podspec; sourceTree = SOURCE_ROOT; };
+		8FC3ACEC2375648100C6D953 /* XTTable.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = XTTable.podspec; sourceTree = SOURCE_ROOT; };
 		A8544D5A895C56E6BF307162 /* Pods-TableDatasourceSeparation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableDatasourceSeparation.debug.xcconfig"; path = "Target Support Files/Pods-TableDatasourceSeparation/Pods-TableDatasourceSeparation.debug.xcconfig"; sourceTree = "<group>"; };
 		B992F04C86FDF8484374B96E /* Pods_TableDatasourceSeparation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableDatasourceSeparation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D75CC3411C21162100E590E6 /* UITableViewCell+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+Extension.h"; path = "XTTableDataDelegate/UITableViewCell+Extension.h"; sourceTree = "<group>"; };
@@ -190,6 +190,8 @@
 		8FC3ACEE2375670300C6D953 /* Sample */ = {
 			isa = PBXGroup;
 			children = (
+				D7E8FD0B1C12961C005E908F /* ViewController.h */,
+				D7E8FD0C1C12961C005E908F /* ViewController.m */,
 				D7E8FD3B1C129669005E908F /* MyCell.h */,
 				D7E8FD3C1C129669005E908F /* MyCell.m */,
 				D7E8FD3D1C129669005E908F /* MyCell.xib */,
@@ -237,8 +239,6 @@
 				8FC3ACEA2375647B00C6D953 /* README.md */,
 				D7E8FD081C12961C005E908F /* AppDelegate.h */,
 				D7E8FD091C12961C005E908F /* AppDelegate.m */,
-				D7E8FD0B1C12961C005E908F /* ViewController.h */,
-				D7E8FD0C1C12961C005E908F /* ViewController.m */,
 				8FC3ACEE2375670300C6D953 /* Sample */,
 				8FB4ABD023755863002D5FB4 /* XTTable */,
 				8FB4ABEA23755CB3002D5FB4 /* XTCollection */,
