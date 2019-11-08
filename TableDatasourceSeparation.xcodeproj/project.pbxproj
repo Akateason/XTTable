@@ -187,6 +187,18 @@
 			path = XTCollection;
 			sourceTree = "<group>";
 		};
+		8FC3ACEE2375670300C6D953 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				D7E8FD3B1C129669005E908F /* MyCell.h */,
+				D7E8FD3C1C129669005E908F /* MyCell.m */,
+				D7E8FD3D1C129669005E908F /* MyCell.xib */,
+				D7E8FD401C129669005E908F /* MyObj.h */,
+				D7E8FD411C12966A005E908F /* MyObj.m */,
+			);
+			name = Sample;
+			sourceTree = "<group>";
+		};
 		B9AF7BA6E933294384EE90E3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,10 +239,10 @@
 				D7E8FD091C12961C005E908F /* AppDelegate.m */,
 				D7E8FD0B1C12961C005E908F /* ViewController.h */,
 				D7E8FD0C1C12961C005E908F /* ViewController.m */,
+				8FC3ACEE2375670300C6D953 /* Sample */,
 				8FB4ABD023755863002D5FB4 /* XTTable */,
 				8FB4ABEA23755CB3002D5FB4 /* XTCollection */,
 				D7E8FD501C12C6F2005E908F /* XTTableDataSourceSeperation */,
-				D7E8FD491C129FAB005E908F /* MyCell */,
 				D7E8FD0E1C12961C005E908F /* Main.storyboard */,
 				D7E8FD111C12961C005E908F /* Assets.xcassets */,
 				D7E8FD131C12961C005E908F /* LaunchScreen.storyboard */,
@@ -264,18 +276,6 @@
 				D7E8FD2C1C12961C005E908F /* Info.plist */,
 			);
 			path = TableDatasourceSeparationUITests;
-			sourceTree = "<group>";
-		};
-		D7E8FD491C129FAB005E908F /* MyCell */ = {
-			isa = PBXGroup;
-			children = (
-				D7E8FD3B1C129669005E908F /* MyCell.h */,
-				D7E8FD3C1C129669005E908F /* MyCell.m */,
-				D7E8FD3D1C129669005E908F /* MyCell.xib */,
-				D7E8FD401C129669005E908F /* MyObj.h */,
-				D7E8FD411C12966A005E908F /* MyObj.m */,
-			);
-			name = MyCell;
 			sourceTree = "<group>";
 		};
 		D7E8FD501C12C6F2005E908F /* XTTableDataSourceSeperation */ = {

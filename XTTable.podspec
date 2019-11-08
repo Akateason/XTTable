@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'TableDatasourceSeparation/TableDatasourceSeparation/XTTable/Classes/*.{h,m}','TableDatasourceSeparation/TableDatasourceSeparation/XTCollection/Classes/*.{h,m}'
-  s.public_header_files = "TableDatasourceSeparation/TableDatasourceSeparation/XTTable/*.h","TableDatasourceSeparation/TableDatasourceSeparation/XTCollection/*.h"
+  s.source_files = 'TableDatasourceSeparation/XTTable/*.{h,m}','TableDatasourceSeparation/XTCollection/*.{h,m}'
+  s.public_header_files = "TableDatasourceSeparation/XTTable/*.h","TableDatasourceSeparation/XTCollection/*.h"
   
   s.dependency 'XTBase'
   

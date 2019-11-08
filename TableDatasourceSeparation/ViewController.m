@@ -7,17 +7,15 @@
 //
 
 #import "ViewController.h"
-#import "XTTableDataDelegate.h"
 #import "MyCell.h"
 #import "MyObj.h"
-#import "UITableViewCell+Extension.h"
+#import "XTTable.h"
 
-static NSString *const MyCellIdentifier = @"MyCell"; // `cellIdentifier` AND `NibName` HAS TO BE SAME !
 
 
 @interface ViewController ()
-@property (nonatomic, strong) NSMutableArray *list;
-@property (nonatomic, strong) XTTableDataDelegate *tableHandler;
+@property (nonatomic, copy) NSMutableArray *list;
+
 
 @end
 
@@ -40,39 +38,11 @@ static NSString *const MyCellIdentifier = @"MyCell"; // `cellIdentifier` AND `Ni
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self setupTableView];
+//    [self.table ]
+    [self.table xt_]
+    
+    
 }
 
-- (void)setupTableView {
-    self.table.separatorStyle = UITableViewCellSeparatorStyleNone;
-
-    TableViewCellConfigureBlock configureCell = ^(NSIndexPath *indexPath, MyObj *obj, UITableViewCell *cell) {
-        [cell configure:cell
-              customObj:obj
-              indexPath:indexPath];
-    };
-
-    CellHeightBlock heightBlock = ^CGFloat(NSIndexPath *indexPath, id item) {
-        return [MyCell getCellHeightWithCustomObj:item
-                                        indexPath:indexPath];
-    };
-
-    DidSelectCellBlock selectedBlock = ^(NSIndexPath *indexPath, id item) {
-        NSLog(@"click row : %@", @(indexPath.row));
-    };
-
-    self.tableHandler = [[XTTableDataDelegate alloc] initWithItems:self.list
-                                                    cellIdentifier:MyCellIdentifier
-                                                configureCellBlock:configureCell
-                                                   cellHeightBlock:heightBlock
-                                                    didSelectBlock:selectedBlock];
-
-    [self.tableHandler handleTableViewDatasourceAndDelegate:self.table];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
