@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'XTTable'
-  s.version          = '0.0.1'
+  s.version          = '1.0.0'
   s.summary          = 'Fast way to setup TableView and CollectionView .'
   #s.description      =
   s.homepage         = 'https://github.com/akateason/XTTable'
