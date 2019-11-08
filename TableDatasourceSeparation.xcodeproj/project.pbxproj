@@ -14,6 +14,12 @@
 		8FB4ABE623755863002D5FB4 /* UITableView+XTReloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4ABDC23755863002D5FB4 /* UITableView+XTReloader.m */; };
 		8FB4ABE723755863002D5FB4 /* RootRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4ABDD23755863002D5FB4 /* RootRefreshFooter.m */; };
 		8FB4ABE823755863002D5FB4 /* RootRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4ABDE23755863002D5FB4 /* RootRefreshHeader.m */; };
+		8FB4ABF523755CB3002D5FB4 /* UICollectionView+XTPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4ABEB23755CB3002D5FB4 /* UICollectionView+XTPlaceHolder.m */; };
+		8FB4ABF623755CB3002D5FB4 /* UICollectionView+XT.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4ABEC23755CB3002D5FB4 /* UICollectionView+XT.m */; };
+		8FB4ABF723755CB3002D5FB4 /* UICollectionViewCell+XT.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4ABEE23755CB3002D5FB4 /* UICollectionViewCell+XT.m */; };
+		8FB4ABF823755CB3002D5FB4 /* RootCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4ABF223755CB3002D5FB4 /* RootCollectionCell.m */; };
+		8FB4ABF923755CB3002D5FB4 /* RootCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4ABF323755CB3002D5FB4 /* RootCollectionView.m */; };
+		A2DBCA967629FBE3C45EAF9E /* Pods_TableDatasourceSeparation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B992F04C86FDF8484374B96E /* Pods_TableDatasourceSeparation.framework */; };
 		D75CC3431C21162100E590E6 /* UITableViewCell+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D75CC3421C21162100E590E6 /* UITableViewCell+Extension.m */; };
 		D7E8FD071C12961C005E908F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD061C12961C005E908F /* main.m */; };
 		D7E8FD0A1C12961C005E908F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD091C12961C005E908F /* AppDelegate.m */; };
@@ -61,6 +67,18 @@
 		8FB4ABDE23755863002D5FB4 /* RootRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootRefreshHeader.m; sourceTree = "<group>"; };
 		8FB4ABDF23755863002D5FB4 /* RootTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableCell.h; sourceTree = "<group>"; };
 		8FB4ABE023755863002D5FB4 /* UITableView+XTPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+XTPlaceHolder.h"; sourceTree = "<group>"; };
+		8FB4ABEB23755CB3002D5FB4 /* UICollectionView+XTPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+XTPlaceHolder.m"; sourceTree = "<group>"; };
+		8FB4ABEC23755CB3002D5FB4 /* UICollectionView+XT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+XT.m"; sourceTree = "<group>"; };
+		8FB4ABED23755CB3002D5FB4 /* RootCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootCollectionCell.h; sourceTree = "<group>"; };
+		8FB4ABEE23755CB3002D5FB4 /* UICollectionViewCell+XT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+XT.m"; sourceTree = "<group>"; };
+		8FB4ABEF23755CB3002D5FB4 /* RootCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootCollectionView.h; sourceTree = "<group>"; };
+		8FB4ABF023755CB3002D5FB4 /* UICollectionView+XTPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+XTPlaceHolder.h"; sourceTree = "<group>"; };
+		8FB4ABF123755CB3002D5FB4 /* UICollectionView+XT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+XT.h"; sourceTree = "<group>"; };
+		8FB4ABF223755CB3002D5FB4 /* RootCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootCollectionCell.m; sourceTree = "<group>"; };
+		8FB4ABF323755CB3002D5FB4 /* RootCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootCollectionView.m; sourceTree = "<group>"; };
+		8FB4ABF423755CB3002D5FB4 /* UICollectionViewCell+XT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+XT.h"; sourceTree = "<group>"; };
+		A8544D5A895C56E6BF307162 /* Pods-TableDatasourceSeparation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableDatasourceSeparation.debug.xcconfig"; path = "Target Support Files/Pods-TableDatasourceSeparation/Pods-TableDatasourceSeparation.debug.xcconfig"; sourceTree = "<group>"; };
+		B992F04C86FDF8484374B96E /* Pods_TableDatasourceSeparation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableDatasourceSeparation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D75CC3411C21162100E590E6 /* UITableViewCell+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+Extension.h"; path = "XTTableDataDelegate/UITableViewCell+Extension.h"; sourceTree = "<group>"; };
 		D75CC3421C21162100E590E6 /* UITableViewCell+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+Extension.m"; path = "XTTableDataDelegate/UITableViewCell+Extension.m"; sourceTree = "<group>"; };
 		D7E8FD021C12961C005E908F /* TableDatasourceSeparation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableDatasourceSeparation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +104,7 @@
 		D7E8FD411C12966A005E908F /* MyObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyObj.m; sourceTree = "<group>"; };
 		D7E8FD531C152DA6005E908F /* XTTableDataDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XTTableDataDelegate.h; path = XTTableDataDelegate/XTTableDataDelegate.h; sourceTree = "<group>"; };
 		D7E8FD541C152DA6005E908F /* XTTableDataDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XTTableDataDelegate.m; path = XTTableDataDelegate/XTTableDataDelegate.m; sourceTree = "<group>"; };
+		F273E9058626C6898FB80BC0 /* Pods-TableDatasourceSeparation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableDatasourceSeparation.release.xcconfig"; path = "Target Support Files/Pods-TableDatasourceSeparation/Pods-TableDatasourceSeparation.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2DBCA967629FBE3C45EAF9E /* Pods_TableDatasourceSeparation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +133,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A900B45930BF8F44E9E238F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B992F04C86FDF8484374B96E /* Pods_TableDatasourceSeparation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8FB4ABD023755863002D5FB4 /* XTTable */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +162,33 @@
 			path = XTTable;
 			sourceTree = "<group>";
 		};
+		8FB4ABEA23755CB3002D5FB4 /* XTCollection */ = {
+			isa = PBXGroup;
+			children = (
+				8FB4ABF123755CB3002D5FB4 /* UICollectionView+XT.h */,
+				8FB4ABEC23755CB3002D5FB4 /* UICollectionView+XT.m */,
+				8FB4ABF023755CB3002D5FB4 /* UICollectionView+XTPlaceHolder.h */,
+				8FB4ABEB23755CB3002D5FB4 /* UICollectionView+XTPlaceHolder.m */,
+				8FB4ABF423755CB3002D5FB4 /* UICollectionViewCell+XT.h */,
+				8FB4ABEE23755CB3002D5FB4 /* UICollectionViewCell+XT.m */,
+				8FB4ABED23755CB3002D5FB4 /* RootCollectionCell.h */,
+				8FB4ABF223755CB3002D5FB4 /* RootCollectionCell.m */,
+				8FB4ABEF23755CB3002D5FB4 /* RootCollectionView.h */,
+				8FB4ABF323755CB3002D5FB4 /* RootCollectionView.m */,
+			);
+			path = XTCollection;
+			sourceTree = "<group>";
+		};
+		B9AF7BA6E933294384EE90E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8544D5A895C56E6BF307162 /* Pods-TableDatasourceSeparation.debug.xcconfig */,
+				F273E9058626C6898FB80BC0 /* Pods-TableDatasourceSeparation.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D7E8FCF91C12961B005E908F = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +196,8 @@
 				D7E8FD1E1C12961C005E908F /* TableDatasourceSeparationTests */,
 				D7E8FD291C12961C005E908F /* TableDatasourceSeparationUITests */,
 				D7E8FD031C12961C005E908F /* Products */,
+				B9AF7BA6E933294384EE90E3 /* Pods */,
+				4A900B45930BF8F44E9E238F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,6 +219,7 @@
 				D7E8FD0B1C12961C005E908F /* ViewController.h */,
 				D7E8FD0C1C12961C005E908F /* ViewController.m */,
 				8FB4ABD023755863002D5FB4 /* XTTable */,
+				8FB4ABEA23755CB3002D5FB4 /* XTCollection */,
 				D7E8FD501C12C6F2005E908F /* XTTableDataSourceSeperation */,
 				D7E8FD491C129FAB005E908F /* MyCell */,
 				D7E8FD0E1C12961C005E908F /* Main.storyboard */,
@@ -229,9 +287,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7E8FD2F1C12961C005E908F /* Build configuration list for PBXNativeTarget "TableDatasourceSeparation" */;
 			buildPhases = (
+				2F54B7038A5A95B8CECF3E79 /* [CP] Check Pods Manifest.lock */,
 				D7E8FCFE1C12961C005E908F /* Sources */,
 				D7E8FCFF1C12961C005E908F /* Frameworks */,
 				D7E8FD001C12961C005E908F /* Resources */,
+				0640C1C2C1DCA1BA20DDAD6D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -349,6 +409,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0640C1C2C1DCA1BA20DDAD6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TableDatasourceSeparation/Pods-TableDatasourceSeparation-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TableDatasourceSeparation/Pods-TableDatasourceSeparation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F54B7038A5A95B8CECF3E79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TableDatasourceSeparation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D7E8FCFE1C12961C005E908F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -357,16 +462,21 @@
 				D7E8FD0D1C12961C005E908F /* ViewController.m in Sources */,
 				8FB4ABE323755863002D5FB4 /* RootTableView.m in Sources */,
 				8FB4ABE823755863002D5FB4 /* RootRefreshHeader.m in Sources */,
+				8FB4ABF823755CB3002D5FB4 /* RootCollectionCell.m in Sources */,
 				D7E8FD451C12966A005E908F /* MyObj.m in Sources */,
 				D7E8FD561C152DA6005E908F /* XTTableDataDelegate.m in Sources */,
 				8FB4ABE723755863002D5FB4 /* RootRefreshFooter.m in Sources */,
 				8FB4ABE423755863002D5FB4 /* RootTableCell.m in Sources */,
 				8FB4ABE523755863002D5FB4 /* UITableView+XTPlaceHolder.m in Sources */,
+				8FB4ABF523755CB3002D5FB4 /* UICollectionView+XTPlaceHolder.m in Sources */,
 				D7E8FD0A1C12961C005E908F /* AppDelegate.m in Sources */,
 				8FB4ABE623755863002D5FB4 /* UITableView+XTReloader.m in Sources */,
 				D7E8FD071C12961C005E908F /* main.m in Sources */,
+				8FB4ABF623755CB3002D5FB4 /* UICollectionView+XT.m in Sources */,
 				D7E8FD421C12966A005E908F /* MyCell.m in Sources */,
+				8FB4ABF923755CB3002D5FB4 /* RootCollectionView.m in Sources */,
 				D75CC3431C21162100E590E6 /* UITableViewCell+Extension.m in Sources */,
+				8FB4ABF723755CB3002D5FB4 /* UICollectionViewCell+XT.m in Sources */,
 				8FB4ABE223755863002D5FB4 /* UITableViewCell+XT.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,6 +616,7 @@
 		};
 		D7E8FD301C12961C005E908F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8544D5A895C56E6BF307162 /* Pods-TableDatasourceSeparation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TableDatasourceSeparation/Info.plist;
@@ -517,6 +628,7 @@
 		};
 		D7E8FD311C12961C005E908F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F273E9058626C6898FB80BC0 /* Pods-TableDatasourceSeparation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TableDatasourceSeparation/Info.plist;

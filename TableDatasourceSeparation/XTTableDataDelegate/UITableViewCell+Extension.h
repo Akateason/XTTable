@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+__attribute__((deprecated("Class UITableViewCell is deprecated , use XTTable instead!!!")))
+
+
 @interface UITableViewCell (Extension)
 
 + (void)registerTable:(UITableView *)table

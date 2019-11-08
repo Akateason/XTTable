@@ -1,0 +1,6 @@
+framework module Pods_TableDatasourceSeparation {
+  umbrella header "Pods-TableDatasourceSeparation-umbrella.h"
+
+  export *
+  module * { export * }
+}
