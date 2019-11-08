@@ -1,0 +1,6 @@
+framework module XTBase {
+  umbrella header "XTBase-umbrella.h"
+
+  export *
+  module * { export * }
+}
