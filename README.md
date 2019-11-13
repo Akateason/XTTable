@@ -21,12 +21,12 @@ pod "XTTable"
 
 ### setup
 ```Objective-C
-[MyCell xt_registerNibFromTable:self.table] ;
-[self.table xt_setup] ;
+    [MyCell xt_registerNibFromTable:self.table] ;
+    [self.table xt_setup] ;
 
-self.table.delegate = self ;
-self.table.dataSource = self ;
-self.table.xt_Delegate = self ;
+    self.table.delegate = self ;
+    self.table.dataSource = self ;
+    self.table.xt_Delegate = self ;
 ```
 
 ### datasource and delegate
@@ -36,25 +36,25 @@ self.table.xt_Delegate = self ;
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-return self.list.count;
+    return self.list.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-MyCell *cell = [MyCell xt_fetchFromTable:tableView] ;
-[cell xt_configure:self.list[indexPath.row] indexPath:indexPath] ;
-return cell;
+    MyCell *cell = [MyCell xt_fetchFromTable:tableView] ;
+    [cell xt_configure:self.list[indexPath.row] indexPath:indexPath] ;
+    return cell;
 }
 
 #pragma mark --
 #pragma mark - UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-return [MyCell xt_cellHeightForModel:self.list[indexPath.row]] ;
+    return [MyCell xt_cellHeightForModel:self.list[indexPath.row]] ;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-MyObj *obj = self.list[indexPath.row] ;
-NSLog(@"current index path %@, height %@",obj.name, @(obj.height)) ;
+    MyObj *obj = self.list[indexPath.row] ;
+    NSLog(@"current index path %@, height %@",obj.name, @(obj.height)) ;
 }
 ```
 
@@ -64,13 +64,13 @@ NSLog(@"current index path %@, height %@",obj.name, @(obj.height)) ;
 #pragma mark - UITableViewXTReloaderDelegate
 
 - (void)tableView:(UITableView *)table loadNew:(void (^)(void))endRefresh {
-...
-endRefresh() ;
+    // do load new ...
+    endRefresh() ;
 }
 
 - (void)tableView:(UITableView *)table loadMore:(void (^)(void))endRefresh {
-...
-endRefresh() ;
+    // do load more ...
+    endRefresh() ;
 }
 ```
 ## Author
