@@ -1,4 +1,5 @@
 # XTTable
+A tool for quickly laying out and configuring UITable and UICollectionView
 
 ## Example
 
@@ -18,7 +19,10 @@ pod "XTTable"
 ```
 
 ## Useage
-
+```
+#import <XTTable/XTTable.h>       // for UITableView and UITableViewCell
+#import <XTTable/XTCollection.h>  // for UICollectionView and UICollectionViewCell
+```
 ### setup
 ```Objective-C
     [MyCell xt_registerNibFromTable:self.table] ;
