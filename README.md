@@ -73,6 +73,27 @@ pod "XTTable"
     endRefresh() ;
 }
 ```
+
+### Cell configure
+```Objective-C
+@implementation MyCell
+
+- (void)xt_configure:(id)model indexPath:(NSIndexPath *)indexPath {
+    [super xt_configure:model indexPath:indexPath] ;
+
+    MyObj *myObj         = (MyObj *)model;
+    _lbTitle.text  = myObj.name;
+    _lbHeight.text = [NSString stringWithFormat:@"my Height is : %@", @(myObj.height)];
+    self.backgroundColor = indexPath.row % 2 ? [UIColor greenColor] : [UIColor brownColor];
+}
+
++ (CGFloat)xt_cellHeightForModel:(id)model {
+    return ((MyObj *)model).height;
+}
+
+@end
+```
+
 ## Author
 
 teason, akateason@qq.com
