@@ -97,6 +97,7 @@ pod "XTTable"
 
 @end
 ```
+![pic](https://github.com/Akateason/XTTable/blob/master/pic.gif)
 
 ## Author
 
