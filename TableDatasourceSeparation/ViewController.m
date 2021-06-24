@@ -60,9 +60,11 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    MyCell *cell = [MyCell xt_fetchFromTable:tableView] ;
+    return [MyCell xt_fetchFromTable:tableView] ;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     [cell xt_configure:self.list[indexPath.row] indexPath:indexPath] ;
-    return cell;
 }
 
 #pragma mark --
@@ -108,6 +110,5 @@
     
     endRefresh() ;
 }
-
 
 @end
