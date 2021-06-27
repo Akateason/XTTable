@@ -44,10 +44,13 @@ pod "XTTable"
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    MyCell *cell = [MyCell xt_fetchFromTable:tableView] ;
-    [cell xt_configure:self.list[indexPath.row] indexPath:indexPath] ;
-    return cell;
+    return [MyCell xt_fetchFromTable:tableView] ;
 }
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    [cell xt_configure:self.list[indexPath.row] indexPath:indexPath] ;
+}
+
 
 #pragma mark --
 #pragma mark - UITableViewDelegate
